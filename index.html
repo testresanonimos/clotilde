@@ -1,0 +1,235 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Minha Ingrid ❤️</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&family=Homemade+Apple&family=Zeyada&display=swap'>
+  <style>
+    /* Configurações Gerais e Fundo */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f3e5f5; /* Lilás bem clarinho de fundo */
+      background-image: linear-gradient(135deg, #f3e5f5 0%, #fae1e6 100%); /* Degradê Lilás e Rosa */
+      overflow: hidden;
+      font-family: 'Short Stack', sans-serif;
+    }
+
+    /* Container que segura as páginas empilhadas */
+    .container {
+      position: relative;
+      width: 90%;
+      max-width: 380px;
+      height: 550px;
+    }
+
+    /* Estilização das folhas de papel */
+    .paper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      background-image: radial-gradient(#e1bee7 1px, transparent 0); /* Textura sutil lilás */
+      background-size: 24px 24px;
+      border-radius: 15px;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 0 10px 25px rgba(147, 112, 219, 0.2);
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 2px solid #f8bbd0; /* Borda rosa pastel */
+    }
+
+    /* Organização interna do conteúdo */
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      justify-content: space-around;
+    }
+
+    /* Imagens estilo Polaroid */
+    img {
+      max-height: 200px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 8px solid #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Textos e Tipografia */
+    p {
+      font-family: 'Zeyada', cursive;
+      font-size: 32px;
+      color: #4a148c; /* Roxo escuro para leitura */
+      margin: 10px 0;
+      line-height: 1.1;
+    }
+
+    .text-main {
+      font-family: 'Homemade Apple', cursive;
+      font-size: 20px;
+      color: #d81b60; /* Rosa marcante */
+    }
+
+    .text-sub {
+      font-size: 24px;
+      color: #7b1fa2;
+    }
+
+    /* Estilo do Acróstico (Letras GRANDES) */
+    .letter {
+      font-family: 'Homemade Apple', cursive;
+      font-size: 70px;
+      margin: 0;
+      color: #d81b60;
+      text-shadow: 2px 2px #f8bbd0;
+    }
+
+    .meaning {
+      font-size: 28px;
+      font-weight: bold;
+      color: #6a1b9a;
+      margin-top: -10px;
+    }
+
+    .text-body {
+      font-size: 26px;
+      color: #4a148c;
+    }
+
+    /* Transição de saída ao clicar (efeito jogado para o lado) */
+    .paper.fly-away {
+      transform: translateX(150vw) rotate(45deg) !important;
+      opacity: 0;
+    }
+
+    /* A última página não deve parecer clicável para sair */
+    .page-final {
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="paper page-1">
+      <div class="content">
+        <p class="text-main">Faltam exatamente 6 meses para a sua nova primavera...</p>
+        <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=500" alt="Flores de Primavera">
+        <p class="text-sub">E para cada mês, uma letra do seu lindo nome. Clique para abrir... ✨</p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="content">
+        <h1 class="letter">I</h1>
+        <p class="meaning">de Mulher Ilustre</p>
+        <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=500" alt="Brilho e Luz">
+        <p class="text-body">Você brilha por onde passa e deixa uma marca inesquecível no coração de quem tem a sorte de te conhecer, querida.</p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="content">
+        <h1 class="letter">N</h1>
+        <p class="meaning">de Nobre & Natural</p>
+        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500" alt="Natureza Linda">
+        <p class="text-body">Sua essência é pura, sem filtros. Uma nobreza de alma que se reflete na simplicidade do seu sorriso, do seu jeito.</p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="content">
+        <h1 class="letter">G</h1>
+        <p class="meaning">de Gigante</p>
+        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?w=500" alt="Céu Aberto">
+        <p class="text-body">Gigante na força, no amor e na capacidade de fazer bem a todos ao seu redor. Seu coração não tem tamanho, minha linda.</p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="content">
+        <h1 class="letter">R</h1>
+        <p class="meaning">de Radiante</p>
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500" alt="Pôr do Sol Radiante">
+        <p class="text-body">Como o sol da manhã, a sua energia ilumina os meus dias mais tristes e transforma tudo em alegria.</p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="content">
+        <h1 class="letter">I</h1>
+        <p class="meaning">de Idônea</p>
+        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=500" alt="Cristal Claro">
+        <p class="text-body">Uma mulher de valores raros, integridade admirável e uma postura que desperta orgulho em quem está do seu lado.</p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="content">
+        <h1 class="letter">D</h1>
+        <p class="meaning">de Digna</p>
+        <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=500" alt="Celebração">
+        <p class="text-body">Digna de todas as melhores coisas que se pode viver. Você merece o mundo, Ingrid. Saiba que farei de tudo para vivermos os melhores momentos nesse mundo!</p>
+      </div>
+    </div>
+
+    <div class="paper page-final">
+      <div class="content">
+        <p class="text-main">Faltam 6 meses para o seu dia...</p>
+        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=500" alt="Coração">
+        <p class="text-sub">Mas saiba que todo dia é dia de celebrar a sua existência. Espero que essa lembrança tenha te feito sorrir e chorar tb! ❤️</p>
+        <br>
+                <p class="text-sub">Eu te amo e não tenho como resistir a esse amor, coisa lindaaa ❤️</p>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Captura todas as páginas em uma lista (Array)
+      const papers = Array.from(document.querySelectorAll(".paper"));
+
+      papers.forEach((paper, index) => {
+        // Configura o empilhamento (z-index) dinamicamente.
+        paper.style.zIndex = papers.length - index;
+
+        // Aplica uma leve rotação aleatória para parecer um bloco de cartas realistas
+        if (index !== papers.length - 1) {
+          const randomRotation = Math.random() * 6 - 3; // rotação entre -3 e 3 graus
+          paper.style.transform = `rotate(${randomRotation}deg)`;
+        }
+
+        // Adiciona o evento de clique para fazer a transição
+        paper.addEventListener("click", () => {
+          // Se for a última página, não faz nada (ela fica fixa na tela)
+          if (index === papers.length - 1) return;
+
+          // Adiciona a classe que joga a carta para fora da tela
+          paper.classList.add("fly-away");
+
+          // Remove visualmente após a transição terminar
+          setTimeout(() => {
+            paper.style.display = "none";
+          }, 600);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
